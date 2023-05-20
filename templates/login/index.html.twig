@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block body %}
+
+<style>
+
+.screen{
+    width:100;
+    height:100vh;
+}
+</style>
+
+<div class="screen d-flex justify-content-center align-items-center "   >
+
+{% include '@KnojectorSteamAuthentication/button.html.twig' %}
+
+</div>
+
+{% endblock %}

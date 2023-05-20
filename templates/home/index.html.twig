@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+<header>
+<!-- As a link -->
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Navbar</a>
+    <div class="d-flex justify-content-end  align-items-center  me-3" >
+
+<figure class="mx-3 my-0"   >
+
+<img  src="{{avatar}}" alt="{{pseudo}}-avatar" >
+
+</figure>
+
+    <p class="m-0" >{{pseudo}}</p>
+
+    <div class="mx-3" >
+    <a href="{{ path('app_logout') }}">Déconnexion</a></div>
+
+    </div>
+  </div>
+</nav>
+
+
+
+</header>
+    <main class="mt-4 ms-2 d-flex align-items-center flex-column" >
+
+    <h1>Bonjour {{pseudo}}  vous etes sur la page d'accueil</h1>
+    <div class="my-5 text-center">
+        <a  href="{{profile}}"  type="button" class="btn btn-primary">Voir mon Profile</a>
+    </div>
+    </main>
+
+    </script>
+
+{% endblock %}

@@ -1,3 +1,6 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+steam_authentication_callback:
+  path: /steam/login_check
+  controller: Knojector\SteamAuthenticationBundle\Controller\SteamController::callback
