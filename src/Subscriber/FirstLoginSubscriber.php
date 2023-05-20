@@ -46,14 +46,12 @@ class FirstLoginSubscriber implements EventSubscriberInterface
         $steamProfile =  $this->steamServices->GetPlayerSummariesV2($communityId);
 
 
-        $profilName = $steamProfile["personaname"];
-        $avatar = $steamProfile["avatar"];
         $profile = $steamProfile["profileurl"];
 
 
 
         $user = new User();
-        $user->setUsername($communityId)->setPseudo($profilName)->setAvatar($avatar)->setProfileLink($profile);
+        $user->setUsername($communityId)->setProfileLink($profile);
 
 
         $this->entityManager->persist($user);

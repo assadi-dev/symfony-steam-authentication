@@ -24,12 +24,13 @@ class HomeController extends AbstractController
 
         }
 
+        $steam_user = $steamServices->GetPlayerSummariesV2($user->getUserIdentifier());
 
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
-            "avatar"=>$user->getAvatar(),
-            "pseudo"=>$user->getPseudo(),
-            "profile"=>$user->getProfileLink()
+            "avatar"=>$steam_user["avatar"],
+            "pseudo"=>$steam_user["personaname"],
+            "profile"=> $steam_user["profileurl"]
 
         ]);
     }
