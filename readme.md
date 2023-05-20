@@ -3,7 +3,7 @@
 
 **Bundle utilisées**:
 
-- [**knojector/SteamAuthenticationBundle**] - [Lien](https://github.com/knojector/SteamAuthenticationBundle)
+- **knojector/SteamAuthenticationBundle** - [Lien](https://github.com/knojector/SteamAuthenticationBundle)
 
 
 **Documentation de l'Api**
